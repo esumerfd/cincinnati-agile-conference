@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Cincinnati Agile Conference</title>
+<style>
+.swbig {font-size: 16px; font-weight: bolder; font-family: Arial, Verdana}
+td {font-size: 12px; font-family: Arial, Verdana}
+</style>
+</head>
+<body bgcolor=#FFFFFF text=#000000 link=#003399>
+
+<h1 align="center">Cincinnati Agile Conference - Day of Agile</h1>
+
+<p align="center">
+The Cincinnati Agile Conference, on May 15th 2010, will bring together business and technology to discuss how Agile is impacting our lives.
+</p>
+
+<p align="center">
+Stay in touch on twitter <a href="http://twitter.com/cincyagilecon">@cincyagilecon</a>
+or join in the conversation on the <a href="http://groups.google.com/group/cincyagilecon">Google Group</a>
+</p>
+
+<p align="center">Thanks to Dewayne Greenwood for this great design. Now to fill in some content. Lorem ipsum dolor sit amet is just too vague.</p>
+
+<p align="center">
+<img width="649" height="637" border="0" src="cincyagilecon-mockup.jpg"/>
+</p>
+
+</body>
+</html>
