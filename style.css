@@ -1,0 +1,78 @@
+body, html {
+	background-attachment:fixed;
+	background-color: #ccc;
+	background-image:url(images/bg1.jpg);
+	background-position:center top;
+	background-repeat:repeat;
+	color:#6b6a70;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:0.95em;
+	height:100%;
+	line-height:1.6em;
+	width:100%;
+}
+
+h1 { font-size: 4em; letter-spacing: -1px; margin-top: 0.5em; margin-bottom: 0.5em; }
+h2 { font-size: 1.9em; letter-spacing: -1px; margin-top: 1em; margin-bottom: 0.5em; }
+h3 { font-size: 1.7em; letter-spacing: -0.5px; margin-top: 1em; margin-bottom: 0.2em; }
+h4 { font-size: 1.5em; letter-spacing: -0.5px; margin-top: 1em; margin-bottom: 0.2em; }
+h5 { font-size: 1.3em; letter-spacing: -0.5px; margin-top: .5em; margin-bottom: 0em; }
+h6 { font-size: 1em; letter-spacing: -0.5px; margin-top: .5em; margin-bottom: 0em; }
+
+#container {
+	margin: 0 auto;
+	width: 900px;
+	background:#fff;
+}
+
+#tag {
+	margin-top: 30px;
+	margin-right: 60px;
+	float: right;
+}
+
+#content {
+	clear: left;
+	margin-top: 25px;
+	padding: 20px;
+	height: 1350px;
+}
+
+#content h2 {
+	color:#000;
+	font-size: 160%;
+	margin: 0 0 .5em;
+}
+
+#footer {
+	background-image:url(images/footer_bg.jpg);
+	text-align: left;
+	padding: 20px;
+	height: 250px;
+	margin-bottom: 45px;
+}
+
+.left {
+	float: left;
+	width: 530px;
+	padding-right: 30px;
+}
+
+.right {
+	float: left;
+	width: 290px;
+}
+
+.bios {
+	float: right;
+	width: 420px;
+	height: 100px;
+	font-size: 0.95em;
+	line-height: normal;
+}
+
+.avatar {
+	width: 75px;
+	height: 75px;
+	padding-bottom: 15px;
+}
