@@ -1,4 +1,4 @@
-body, html, #containter {
+body, html {
 	background-attachment:fixed;
 	background-color: #ccc;
 	background-image:url(images/bg1.jpg);
@@ -7,20 +7,9 @@ body, html, #containter {
 	color:#6b6a70;
 	font-family:Helvetica,Arial,sans-serif;
 	font-size:0.95em;
-	height: 100%;
 	line-height:1.6em;
 	width:100%;
 }
-
-body > #container {
-	background:#fff;
-	margin: 0 auto;
-	width: 900px;
-	height: auto; 
-	min-height: 100%;
-}
-
-img {border-style: none;}
 
 h1 { font-size: 4em; letter-spacing: -1px; margin-top: 0.5em; margin-bottom: 0.5em; }
 h2 { font-size: 1.9em; letter-spacing: -1px; margin-top: 1em; margin-bottom: 0.5em; }
@@ -29,41 +18,81 @@ h4 { font-size: 1.5em; letter-spacing: -0.5px; margin-top: 1em; margin-bottom: 0
 h5 { font-size: 1.3em; letter-spacing: -0.5px; margin-top: .5em; margin-bottom: 0em; }
 h6 { font-size: 1em; letter-spacing: -0.5px; margin-top: .5em; margin-bottom: 0em; }
 
-/* Header */
+img {border-style: none;}
 
-#header {
-	margin-top: 25px;
-	padding: 20px 20px 0 20px;
+#container {
+	margin: 0 auto;
+	width: 900px;
+	background: #fff;
 }
 
+#header {
+	background: #fff;
+	padding: 20px 20px 0 20px;
+	height: 250px;
+}
+
+#header h1 { margin: 0; }
+
 #tag {
-	margin-top: 30px;
-	margin-right: 60px;
+	margin-top: 10px;
+	margin-right: 40px;
 	float: right;
 }
 
-/* Content */
+#navigation {
+	float: left;
+	width: 900px;
+	background: #333;
+}
+
+#navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+#navigation li a {
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #fff;
+}
+
+#navigation li a:hover { background: #383; }
+
+#content-container {
+	float: left;
+	width: 900px;
+	background: #fff;
+}
 
 #content {
-	padding: 0 20px 20px 20px;
-	height: 100%;
-}
-
-#content h2 {
-	color:#000;
-	font-size: 160%;
-	margin: 0 0 .5em;
-}
-
-#left {
 	float: left;
-	width: 530px;
-	padding-right: 30px;
+	width: 900px;
+	display: inline;
 }
 
 #right {
-	float: left;
+	float: right;
 	width: 290px;
+	padding: 20px 0;
+	margin: 0 20px 0 0;
+	display: inline;
+}
+
+#left {
+	float: right;
+	width: 530px;
+	padding: 20px 0;
+	margin: 0 30px 0 0;
+	display: inline;
 }
 
 .bios {
@@ -80,12 +109,10 @@ h6 { font-size: 1em; letter-spacing: -0.5px; margin-top: .5em; margin-bottom: 0e
 	padding-bottom: 15px;
 }
 
-/* Footer */
-
 #footer {
+	clear: left;
 	background-image:url(images/footer_bg.jpg);
 	text-align: right;
 	padding: 20px;
 	height: 250px;
-	margin-bottom: 45px;
 }
