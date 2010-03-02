@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>Cincinnati Day of Agile</title>
+    <link rel="favicon.ico" href="#"/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div id="tag">
+            <img src="images/tagline.png" alt="tag"/>
+        </div>
+        <div id="logo">
+            <img src="images/cincydayagile_logo.png" alt="Cincinnati Day of Agile" style="padding-bottom: 20px;"/>
+        </div>
+        <img src="images/main.gif" alt="main"/>
+    </div>
+    <!-- <div id="navigation">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+	</div> -->
+    <div id="content-container">
+        <div id="content">
+            <div id="right">
+                <img class="badge" width="175" height="150" src="images/badges/cincyagilecon-logo-speaking.jpg"
+                     alt="I am speaking at the Cincinnati Day of Agile Conference"/>
+                <img class="badge" width="175" height="150" src="images/badges/cincyagilecon-logo-volunteering.jpg"
+                     alt="I am volunteering at the Cincinnati Day of Agile Conference"/>
+                <img class="badge" width="175" height="150" src="images/badges/cincyagilecon-logo-attending.jpg"
+                     alt="I am attending the Cincinnati Day of Agile Conference"/>
+            </div>
+            <div id="left">
+                <h3>Badges</h3>
+
+                <p>Add one of these badge's to your website to help advertise the conference and prove to your
+                    friends that you are the coolest Agilist around.</p>
+                <p>Click on the image you want and copy the html into your site.</p>
+
+                <textarea id="badge_code"rows="6" cols="60">
+                </textarea>
+            </div>
+        </div>
+        <div id="footer">
+            <p style="margin-top: 240px;">Copyright &copy; cincydayagilecon, 2010</p>
+        </div>
+    </div>
+</div>
+
+<div id="template" style="display: none">
+<a href="http://cincydayofagile.org"><img class="badge" width="175" height="150" src="IMAGE_URL" alt="IMAGE_ALT"/></a>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+    $(".badge").click(function()
+    {
+        var template = $('#template').html();
+        template = template.replace('IMAGE_URL', this.src);
+        template = template.replace('IMAGE_ALT', this.alt);
+
+        var badgeCode = $("#badge_code");
+        badgeCode.html(template);
+        badgeCode.show();
+        badgeCode.select();
+    });
+});
+</script>
+</body>
+</html>

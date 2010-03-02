@@ -34,6 +34,16 @@ img {border-style: none;}
 
 #header h1 { margin: 0; }
 
+.badge {
+    
+}
+
+#badge_code {
+    display: none;
+    font-size: 0.9em;
+    margin-left: 4em;
+}
+
 #tag {
 	margin-top: 10px;
 	margin-right: 40px;
