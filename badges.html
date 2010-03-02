@@ -55,9 +55,7 @@
     </div>
 </div>
 
-<div id="template" style="display: none">
-<a href="http://cincydayofagile.org"><img class="badge" width="175" height="150" src="IMAGE_URL" alt="IMAGE_ALT"/></a>
-</div>
+<div id="template" style="display: none"><a href="http://cincydayofagile.org"><img class="badge" width="175" height="150" src="IMAGE_URL" alt="IMAGE_ALT"/></a></div>
 
 <script type="text/javascript">
 $(document).ready(function()
@@ -69,7 +67,7 @@ $(document).ready(function()
         template = template.replace('IMAGE_ALT', this.alt);
 
         var badgeCode = $("#badge_code");
-        badgeCode.html(template);
+        badgeCode[0].value = template;
         badgeCode.show();
         badgeCode.select();
     });
