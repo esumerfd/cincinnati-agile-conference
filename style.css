@@ -105,6 +105,25 @@ img {border-style: none;}
 	display: inline;
 }
 
+.schedule {
+    margin-left: 40px;
+}
+
+.schedule table {
+    border: none;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+.schedule tr td:first-child {
+    font-weight:bold;
+}
+
+.schedule tr td+td {
+    padding-left: 50px;
+    font-style:italic;
+}
+
 .bios {
 	float: right;
 	width: 420px;
