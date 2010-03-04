@@ -35,7 +35,7 @@ img {border-style: none;}
 #header h1 { margin: 0; }
 
 .badge {
-    
+    cursor: pointer;
 }
 
 #badge_code {

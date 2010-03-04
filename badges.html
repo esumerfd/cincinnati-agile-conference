@@ -32,11 +32,14 @@
         <div id="content">
             <div id="right">
                 <img class="badge" width="175" height="150" src="images/badges/cincyagilecon-logo-speaking.jpg"
-                     alt="I am speaking at the Cincinnati Day of Agile Conference"/>
+                     alt="I am speaking at the Cincinnati Day of Agile Conference"
+                     title="Click me then copy the code." />
                 <img class="badge" width="175" height="150" src="images/badges/cincyagilecon-logo-volunteering.jpg"
-                     alt="I am volunteering at the Cincinnati Day of Agile Conference"/>
+                     alt="I am volunteering at the Cincinnati Day of Agile Conference"
+                     title="Click me then copy the code." />
                 <img class="badge" width="175" height="150" src="images/badges/cincyagilecon-logo-attending.jpg"
-                     alt="I am attending the Cincinnati Day of Agile Conference"/>
+                     alt="I am attending the Cincinnati Day of Agile Conference"
+                     title="Click me then copy the code." />
             </div>
             <div id="left">
                 <h3>Badges</h3>
@@ -55,20 +58,23 @@
     </div>
 </div>
 
-<div id="template" style="display: none"><a target="_blank" href="http://cincydayofagile.org"><img class="badge" width="175" height="150" src="IMAGE_URL" alt="IMAGE_ALT"/></a></div>
+<div id="template" style="display: none"><a target="_blank" href="http://cincydayofagile.org/"><img class="badge" width="175" height="150" src="" alt="IMAGE_ALT" title="IMAGE_TITLE" /></a></div>
 
 <script type="text/javascript">
 $(document).ready(function()
 {
     $(".badge").click(function()
     {
+        var image = $('#template a img')[0];
+        image.src = this.src;
+        image.alt = this.alt;
+        image.title = this.alt;
         var template = $('#template').html();
-        template = template.replace('IMAGE_URL', this.src);
-        template = template.replace('IMAGE_ALT', this.alt);
 
         var badgeCode = $("#badge_code");
         badgeCode[0].value = template;
         badgeCode.show();
+        badgeCode.focus();
         badgeCode.select();
     });
 });
