@@ -6,32 +6,34 @@
         <title>{{ page.title }}</title>
         <link rel="favicon.ico" href="http://cincydayofagile.org/" />
         <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 	</head>
 <body>
-    <div id="container">
-        <div id="header">
-            <div id="tag">
-                <img src="images/tagline.png" alt="tag" />
-            </div>
-            <div id="logo">
-                <img src="images/cincydayagile_logo.png" alt="Cincinnati Day of Agile" style="padding-bottom: 20px;" />
-            </div>
-            <!-- img src="images/main.gif" alt="main" / -->
-        </div>
-        <div id="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="badges.html">Badges</a></li>
-            </ul>
-        </div>
 
-        {{ content }}
+<div id="container">
+    <div id="header">
+        <div id="tag">
+            <img src="images/tagline.png" alt="tag" />
+        </div>
+        <div id="logo">
+            <img src="images/cincydayagile_logo.png" alt="Cincinnati Day of Agile" style="padding-bottom: 20px;" />
+        </div>
+        <!-- img src="images/main.gif" alt="main" / -->
+    </div>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="badges.html">Badges</a></li>
+        </ul>
+    </div>
 
-		<div id="footer">
-			<p style="color:#333; text-align:left;padding-top:75px;">Have questions about the event?<br /><a href="mailto:info@cincydayofagile.org" style="color:#333">info@cincydayofagile.org</a></p>
-			<p style="margin-top: 105px;">Copyright &copy; cincydayagilecon, 2010</p>
-		</div>
-	</div>
+    {{ content }}
+
+    <div id="footer">
+        <p style="color:#333; text-align:left;padding-top:75px;">Have questions about the event?<br /><a href="mailto:info@cincydayofagile.org" style="color:#333">info@cincydayofagile.org</a></p>
+        <p style="margin-top: 105px;">Copyright &copy; cincydayagilecon, 2010</p>
+    </div>
 </div>
+
 </body>
 </html>
