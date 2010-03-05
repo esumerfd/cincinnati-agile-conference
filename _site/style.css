@@ -52,8 +52,9 @@ img {border-style: none;}
 
 #navigation {
 	float: left;
-	width: 900px;
-	background: #333;
+	width: 850px;
+	margin-left: 25px;
+	border-bottom: 4px solid #dccf42;
 }
 
 #navigation ul {
@@ -67,15 +68,18 @@ img {border-style: none;}
 }
 
 #navigation li a {
+	width: 60px;
+	height: 20px;
 	display: block;
 	float: left;
-	padding: 5px 10px;
-	color: #fff;
+	padding: 5px 20px;
+	color: #6b6a70;
 	text-decoration: none;
-	border-right: 1px solid #fff;
+	text-align: center;
+	background-image: url(images/nav-tab.png);
 }
 
-#navigation li a:hover { background: #383; }
+#navigation li a:hover { color: #fff; }
 
 #content-container {
 	float: left;
@@ -92,7 +96,7 @@ img {border-style: none;}
 #right {
 	float: right;
 	width: 290px;
-	padding: 20px 0;
+	padding: 10px 0;
 	margin: 0 20px 0 0;
 	display: inline;
 }
@@ -100,7 +104,7 @@ img {border-style: none;}
 #left {
 	float: right;
 	width: 530px;
-	padding: 20px 0;
+	padding: 10px 0;
 	margin: 0 30px 0 0;
 	display: inline;
 }
