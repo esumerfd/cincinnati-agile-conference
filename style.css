@@ -106,7 +106,7 @@ img {border-style: none;}
 }
 
 .schedule {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .schedule table {
@@ -120,7 +120,7 @@ img {border-style: none;}
 }
 
 .schedule tr td+td {
-    padding-left: 50px;
+    padding-left: 10px;
     font-style:italic;
 }
 

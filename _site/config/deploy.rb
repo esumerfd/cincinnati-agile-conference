@@ -19,5 +19,3 @@ set :use_sudo, false
 
 server domain, :app, :web
 role :db, domain, :primary => true
-
-after_deploy: 
