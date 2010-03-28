@@ -20,6 +20,19 @@ h6 { font-size: 1em; letter-spacing: -0.5px; margin-top: .5em; margin-bottom: 0e
 
 img {border-style: none;}
 
+.avatar img
+{
+	border: 3px solid #ccc;
+	width: 75px;
+	height: 75px;
+}
+
+.clear
+{
+	clear: both;
+	line-height: 0px;
+}
+
 #container {
 	margin: 0 auto;
 	width: 900px;
@@ -121,18 +134,34 @@ img {border-style: none;}
 
 .schedule tr td:first-child {
     font-weight:bold;
+	cursor: pointer;
 }
 
 .schedule tr td+td {
     padding-left: 10px;
     font-style:italic;
+	cursor: pointer;
+}
+
+.speaker
+{
+	margin-top: 20px;
+}
+
+.speaker h6
+{
+	font-size: 1.5em;
+	margin-bottom: 5px;
+}
+
+.not-showing {
+	display: none;
 }
 
 .bios {
 	float: right;
 	width: 420px;
-	height: 100px;
-	font-size: 0.95em;
+	font-size: 0.96em;
 	line-height: normal;
 }
 
@@ -140,6 +169,20 @@ img {border-style: none;}
 	width: 75px;
 	height: 75px;
 	padding-bottom: 15px;
+}
+
+.abstract 
+{
+	clear: both;
+	margin-top: 10px;
+	line-height: normal;
+	font-size: 0.98em;
+}
+
+.abstract .title
+{
+	font-weight:bold;
+	font-size: 1em;
 }
 
 #footer {
