@@ -132,15 +132,19 @@ img {border-style: none;}
     empty-cells: show;
 }
 
+.schedule tr:hover
+{
+	background-color: lightyellow;
+	cursor: pointer;
+}
+
 .schedule tr td:first-child {
     font-weight:bold;
-	cursor: pointer;
 }
 
 .schedule tr td+td {
     padding-left: 10px;
     font-style:italic;
-	cursor: pointer;
 }
 
 .speaker
