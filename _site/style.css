@@ -16,7 +16,7 @@ h2 { font-size: 1.9em; letter-spacing: -1px; margin-top: 1em; margin-bottom: 0.5
 h3 { font-size: 1.7em; letter-spacing: -0.5px; margin-top: 1em; margin-bottom: 0.2em; }
 h4 { font-size: 1.5em; letter-spacing: -0.5px; margin-top: 1em; margin-bottom: 0.2em; }
 h5 { font-size: 1.3em; letter-spacing: -0.5px; margin-top: .5em; margin-bottom: 0em; }
-h6 { font-size: 1em; letter-spacing: -0.5px; margin-top: .5em; margin-bottom: 0em; }
+h6 { font-size: 1em; letter-spacing: -0.5px; margin-top: .8em; margin-bottom: 0em; }
 
 img {border-style: none;}
 
@@ -118,7 +118,7 @@ img {border-style: none;}
 	float: right;
 	width: 530px;
 	padding: 10px 0;
-	margin: 0 30px 0 0;
+	margin: 0 10px 0 0;
 	display: inline;
 }
 
@@ -132,10 +132,15 @@ img {border-style: none;}
     empty-cells: show;
 }
 
+.schedule tr
+{
+    height: 35px;
+    valign: top;
+}
+
 .schedule tr:hover
 {
-	background-color: lightyellow;
-	cursor: pointer;
+    background-color: lightyellow;
 }
 
 .schedule tr td:first-child {
@@ -143,7 +148,7 @@ img {border-style: none;}
 }
 
 .schedule tr td+td {
-    padding-left: 10px;
+    padding-left: 5px;
     font-style:italic;
 }
 
