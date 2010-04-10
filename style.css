@@ -162,51 +162,43 @@ img {border-style: none;}
 }
 
 #speaker-JimWeirich {
-	height:180px;
+	height:220px;
 	width:530px;
 	border-bottom: 1px solid #ccc;
 }
 
 #speaker-MichaelEaton {
-	height:290px;
+	height:330px;
 	width:530px;
 	border-bottom: 1px solid #ccc;
 }
 
 #speaker-BrianPrince {
-	height:345px;
+	height:400px;
 	width:530px;
 	border-bottom: 1px solid #ccc;
 }
 
-#speaker-ChrisNelson {
-	height:125px;
-	width:530px;
-	border-bottom: 1px solid #ccc;
-}
-
-#speaker-EdSumerfield {
-	height:125px;
+#speaker-ChrisNelsonEdSumerfield {
+	height:340px;
 	width:530px;
 	border-bottom: 1px solid #ccc;
 }
 
 #speaker-PhilJapikse {
-	height:410px;
+	height:430px;
 	width:530px;
 	border-bottom: 1px solid #ccc;
 }
 
-#speaker-ToddKauffman {
-	height:350px;
+#speaker-ToddKauffmanMattVanVleet {
+	height:650px;
 	width:530px;
 	border-bottom: 1px solid #ccc;
 }
 
-#speaker-MattVanVleet {
-	height:285px;
-	width:530px;
-	border-bottom: 1px solid #ccc;
+#speaker-ToddKauffmanMattVanVleet .avatar.MattVanVleet {
+    margin-top: 100px;
 }
 
 #speaker-JimHolmes {
@@ -215,7 +207,7 @@ img {border-style: none;}
 }
 
 .speaker h6 {
-	font-size: 1.5em;
+	font-size: 1.7em;
 	margin-bottom: 5px;
 }
 
@@ -228,6 +220,7 @@ img {border-style: none;}
 	width: 420px;
 	font-size: 0.96em;
 	line-height: normal;
+        margin-top: 10px;
 }
 
 .avatar {
