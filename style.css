@@ -152,63 +152,10 @@ img {border-style: none;}
     font-style:italic;
 }
 
-/**** Styling for each Speaker ****/
-
-#speaker-MarkWindholtz {
-	height:320px;
+.speaker {
 	width:530px;
 	border-bottom: 1px solid #ccc;
-}
-
-#speaker-SujitUpadhye {
-	height:265px;
-	width:530px;
-	border-bottom: 1px solid #ccc;
-}
-
-#speaker-JimWeirich {
-	height:220px;
-	width:530px;
-	border-bottom: 1px solid #ccc;
-}
-
-#speaker-MichaelEaton {
-	height:330px;
-	width:530px;
-	border-bottom: 1px solid #ccc;
-}
-
-#speaker-BrianPrince {
-	height:400px;
-	width:530px;
-	border-bottom: 1px solid #ccc;
-}
-
-#speaker-ChrisNelsonEdSumerfield {
-	height:440px;
-	width:530px;
-	border-bottom: 1px solid #ccc;
-}
-
-#speaker-PhilJapikse {
-	height:450px;
-	width:530px;
-	border-bottom: 1px solid #ccc;
-}
-
-#speaker-ToddKauffmanMattVanVleet {
-	height:650px;
-	width:530px;
-	border-bottom: 1px solid #ccc;
-}
-
-#speaker-ToddKauffmanMattVanVleet .avatar.MattVanVleet {
-    margin-top: 100px;
-}
-
-#speaker-JimHolmes {
-	height:335px;
-	width:530px;
+        padding-bottom: 1em;
 }
 
 .speaker h6 {
@@ -232,6 +179,9 @@ img {border-style: none;}
 	width: 75px;
 	height: 75px;
 	padding-bottom: 15px;
+}
+.avatar img {
+        border: 3px solid #ccc;
 }
 
 .abstract 
