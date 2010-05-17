@@ -101,9 +101,37 @@ img {border-style: none;}
 }
 
 #content {
-	float: left;
-	width: 900px;
-	display: inline;
+    float: left;
+    width: 900px;
+    display: inline;
+}
+
+#notice {
+    width: 850px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #DCCF42;
+}
+
+#notice .complete {
+    padding: 0px 50px;
+}
+#notice .quotes {
+    float: left;
+    width: 300px;
+    border: 2px solid #DCCF42;
+}
+#notice .pdus {
+    float: right;
+    width: 300px;
+    border: 2px solid #DCCF42;
+}
+#notice .presentations {
+    padding: 0px 50px;
+    clear: both;
+}
+#notice .next {
+    padding: 0px 50px;
 }
 
 .sold_out {
