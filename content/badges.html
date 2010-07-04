@@ -1,0 +1,49 @@
+---
+layout: default
+title: Cincinnati Day of Agile - Badges
+---
+        <div id="content">
+            <div id="right">
+                <img class="badge" width="175" height="150" src="images/badges/cincyagilecon-logo-speaking.jpg"
+                     alt="I am speaking at the Cincinnati Day of Agile Conference"
+                     title="Click me then copy the code." />
+                <img class="badge" width="175" height="150" src="images/badges/cincyagilecon-logo-volunteering.jpg"
+                     alt="I am volunteering at the Cincinnati Day of Agile Conference"
+                     title="Click me then copy the code." />
+                <img class="badge" width="175" height="150" src="images/badges/cincyagilecon-logo-attending.jpg"
+                     alt="I am attending the Cincinnati Day of Agile Conference"
+                     title="Click me then copy the code." />
+            </div>
+            <div id="left">
+                <h3>Badges</h3>
+
+                <p>Add one of these badge's to your website to help advertise the conference and prove to your
+                    friends that you are the coolest Agilist around.</p>
+                <p>Click on the image you want and copy the html into your site.</p>
+
+                <textarea id="badge_code"rows="6" cols="60">
+                </textarea>
+            </div>
+        </div>
+
+        <div id="template" style="display: none"><a target="_blank" href="http://cincydayofagile.org/"><img class="badge" width="175" height="150" src="" alt="IMAGE_ALT" title="IMAGE_TITLE" /></a></div>
+
+        <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $(".badge").click(function()
+            {
+                var image = $('#template a img')[0];
+                image.src = this.src;
+                image.alt = this.alt;
+                image.title = this.alt;
+                var template = $('#template').html();
+
+                var badgeCode = $("#badge_code");
+                badgeCode[0].value = template;
+                badgeCode.show();
+                badgeCode.focus();
+                badgeCode.select();
+            });
+        });
+        </script>

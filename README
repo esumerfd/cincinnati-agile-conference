@@ -1,0 +1,15 @@
+Cincinnati Agile Conference.
+============================
+
+A simple HTML site that presents the conference information.
+
+Install:
+
+: gem install webby
+: gem install capistrano
+
+: webby autobuild
+
+: cap deploy
+
+
