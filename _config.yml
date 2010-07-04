@@ -1,7 +1,0 @@
-destination: ./_site
-auto:        true
-lsi:         false
-server_port: 3000
-pygments:    false
-#markdown:    maruku
-#permalink:   /articles/:year/:month/:day/:title
