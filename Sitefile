@@ -1,7 +1,8 @@
+# SITE.user = "cincyagilecon"
+# SITE.host = "bitbashers.org" 
+# SITE.remote_dir = "/user/cincyagilecon/tmp"
 
 task :default => :build
 
 desc 'deploy the site to the webserver'
 task :deploy => [:build, 'deploy:rsync']
-
-# EOF
