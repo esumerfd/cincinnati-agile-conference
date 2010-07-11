@@ -19,3 +19,10 @@ set :use_sudo, false
 
 server domain, :app, :web
 role :db, domain, :primary => true
+
+namespace :rake do  
+  desc "Run a task on a remote server."  
+  task :webby do  
+    run("cd #{deploy_to}/current && webby")
+  end
+end
