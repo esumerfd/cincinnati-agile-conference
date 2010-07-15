@@ -2,12 +2,10 @@ default_run_options[:pty] = true
 
 set :ssh_options, {:forward_agent => true}
 
-# be sure to change these
 set :user, 'cincyagilecon'
 set :domain, 'bitbashers.org'
 set :application, 'cincydayofagile.org'
 
-# the rest should be good
 set :repository,  "git@github.com:esumerfd/cincinnati-agile-conference.git"
 set :deploy_to, "/home/#{user}/#{application}"
 set :deploy_via, :remote_cache
@@ -20,9 +18,11 @@ set :use_sudo, false
 server domain, :app, :web
 role :db, domain, :primary => true
 
-namespace :rake do  
-  desc "Run a task on a remote server."  
-  task :webby do  
+after :deploy, "webby:deploy"
+
+namespace :webby do  
+  desc "Generate the webby site"  
+  task :deploy do  
     run("cd #{deploy_to}/current && webby")
   end
 end
