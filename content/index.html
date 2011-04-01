@@ -5,296 +5,30 @@ filter: erb
 
 <div id="content">
 
-  <%#= render(:partial => "over") %>
+  <%= render :partial => "over" %>
     
   <div id="right">
 
     <%#= render :partial => "soldout" %>
-    <%= render :partial => "event_bright" %>
-    <%#
-   <h3>Location</h3>
-    <p><strong>Microsoft Office</strong><br />
-      4605 Duke Dr Ste 800<br />
-      Mason, OH 45040-7627</p>
-    <iframe width="290" height="290" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=4605+Duke+Dr+Ste+800+Mason,+OH+45040-7627&amp;sll=39.301495,-84.307301&amp;sspn=0.009265,0.018024&amp;ie=UTF8&amp;hq=&amp;hnear=4605+Duke+Dr,+Mason,+Warren,+Ohio+45040&amp;ll=39.30973,-84.303074&amp;spn=0.019259,0.024805&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=4605+Duke+Dr+Ste+800+Mason,+OH+45040-7627&amp;sll=39.301495,-84.307301&amp;sspn=0.009265,0.018024&amp;ie=UTF8&amp;hq=&amp;hnear=4605+Duke+Dr,+Mason,+Warren,+Ohio+45040&amp;ll=39.30973,-84.303074&amp;spn=0.019259,0.024805&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-    %>
+    <%#= render :partial => "event_bright" %>
+    <%#= render :partial => "location" %>
 
     <a href="http://twitter.com/cincyagilecon" target="_blank"><img src="images/twitter.png" alt="twitter" style="border: none;" /></a>
     <a href="http://groups.google.com/group/cincyagilecon" style="color: #6b6a70;"><h4>Discussion Group</h4></a>
     
-    <h3>Sponsors</h3>
-    <p>We'd like to thank all our sponsors for helping make this event possible!</p>
-    <h2>Platinum</h2>
-    <a href="http://www.telerik.com/" target="_blank"><img src="images/sponsors/sponsor_telerik.png" alt="Telerik Corporation" /></a>
-    <h2>Gold</h2>
-    <a href="http://www.sds-consulting.com/" target="_blank"><img src="images/sponsors/sponsor_strategic_data_systems.png" alt="Strategic Data Systems" /></a>
-    <br />
-    <a href="http://www.microsoft.com/" target="_blank"><img src="images/sponsors/sponsor_microsoft.png" alt="Microsoft" /></a>
-    <h2>Silver</h2>
-    <a href="http://www.maxtrain.com/" target="_blank"><img src="images/sponsors/sponsor_max_train.png" alt="Max Technical Training" /></a>
-    <a href="http://www.scrum.org/" target="_blank"><img src="images/sponsors/sponsor_scrumdotorg.png" alt="Scrum.org" /></a>
-  </div>
-  
+    <%= render :partial => "sponsors" %>
+  </div> 
+
   <div id="left">
-    <h3>What is Cincinnati Day of Agile?</h3>
-    <p>
-      As the Agile project management process sweeps across the
-      software industry, businesses not understanding the details are
-      being left behind. This 3rd Cincinnati Day of Agile builds on the
-      successful events last year to present a 3 track conference to
-      both introduce those new to Agile and encourage stimulating
-      conversation for those more advanced in the subject.
-   </p>
-    <p>
-      At this one day event on Saturday, Mar 26th, you will have the 
-      opportunity to choose between 3 different tracks. The first is
-      focused on those new to Agile, the second aims to bring together
-      the latest in Agile thinking for the advanced practitioner and the
-      third track, run as an open space, aims to help those with specific
-      problems looking for groups of experts to discuss.
-   </p>
+    <%= render :partial => "whatiscdoa" %>
 
    <%#
     <h3>Open for Proposals</h3>
     <p>This years content will be chosen from the best submissions we receive.</p>
     <p>Please download the <a href="presentations/CincyDayOfAgile2011-ProposalTemplate.xlsx">form</a>, fill it in and send to <a href="mailto:speakers@dayofagile.org">speakers@dayofagile.org</a>.</p>
     %>
-
-    <%#
-    <h3>Schedule</h3>
-    <p>The talks will be presented from 8:00am to 5:00pm.</p>
     
-    <p><a href="presentations/cincy_day_of_agile_presentations_2010_08_15.zip">Presentation Slides</a></p>
-
-    <div id="schedule" class="schedule">
-      <table>
-        <tr><td>Opening Remarks</td><td>Phil Japikse</td></tr>
-        <tr><td>Intro to Scrum/Agile</td><td>Mark Windholtz</td></tr>
-        <tr><td>Engineering Practices</td><td>Jim Weirich</td></tr>
-        <tr><td>Five Things to Be More Agile</td><td>Brian Prince</td></tr>
-        <tr><td>Why Agile Fails</td><td>Chris Nelson</td></tr>
-        <tr><td>Lunch and Panel Discusion</td><td>&nbsp;</td></tr>
-        <tr><td>A Business Success Story</td><td>Sean Heuer</td></tr>
-        <tr><td>Enterprise Agility</td><td>Phil Japikse</td></tr>
-        <tr><td>Retrospectives</td><td>Joe O'Brien</td></tr>
-        <tr><td>Closing remarks and raffle</td><td>&nbsp;</td></tr>
-        <tr><td colspan="2" style="font-size: 0.8em; text-align: right;">Earn 6 PDU's</td></tr>
-      </table>
-    </div>
-    %>
-
-    <%#
-    <h3>Speakers</h3>
-    <div id="speaker-MarkWindholtz" class="speaker">
-      <h5>Mark Windholtz</h5>
-      <div class="bios">
-        <p>
-          Mark Windholtz first encountered ExtremeProgramming in 1999
-          and immediately added Agile practices to his development
-          process to get software projects done better and
-          faster. Through his company, AgileDNA LLC, he has advised
-          Agile teams for Commercial, Non-Profit, Start-up, and
-          Defense projects. Major clients include the AgileAlliance,
-          and the ScrumAlliance. As the founder of the Cincinnati
-          Agile Roundtable, Mark has be instrumental in promoting the
-          Agile philosopy for many years.
-        </p>
-
-        <h6>"Intro to Scrum/Agile"</h6>
-        <p>
-          The term "Agile" includes a number of software processes and
-          frameworks. This talk will introduce at a high-level, what
-          Agile is and the major varieties of Agile.
-          While the technical team is keeping things moving smoothly
-          along, the business part of the team also has work to do.
-          This talk will cover those practices.
-        </p>
-      </div>
-
-     <div class="avatar">
-        <img src="images/headshot/headshot_markwindholtz_75x75.jpg" alt="image" />
-      </div>
-      <div class="clear"></div>
-    </div>
-    
-   <div id="speaker-JimWeirich" class="speaker">
-      <h5>Jim Weirich</h5>
-      <div class="bios">
-        <p>
-          Jim Weirich is the Chief Scientist for EdgeCase LLC, a Rails
-          development firm located in Columbus Ohio. Jim has over
-          twenty-five years of experience in software development. He
-          has worked with real-time data systems for testing jet
-          engines, networking software for information systems, and
-          image processing software for the financial industry. Jim is
-          active in the Ruby community and has contributed to several
-          Ruby projects, including the Rake build system and the
-          RubyGems package software.
-        </p>
-
-        <h6>"Engineering Practices"</h6>
-        <p>
-          The three most important things for an agile development
-          team are: feedback, feedback and feedback.  This feedback
-          allows an agile team to respond quickly to changes while
-          maintaining a high level of quality.  In order to achieve
-          this level of feedback, the team follows a disciplined set
-          of agile practices.  This talk will focus on the engineering
-          practices and demonstrate how they work together.
-        <p>
-      </div>
-
-      <div class="avatar">
-        <img src="images/headshot/headshot_jimweirich_75x75.jpg" alt="image" />
-      </div>
-      <div class="clear"></div>
-    </div>
-
-    <div id="speaker-BrianPrince" class="speaker">    
-      <h5>Brian Prince</h5>
-      <div class="bios">
-        <p>
-          Brian H. Prince is an Architect Evangelist for Microsoft. He
-          gets super excited whenever he talks about technology,
-          especially cloud computing, patterns, and practices. His job
-          is to help customers strategically leverage MS technology,
-          and help them bring their architecture to a super level. In
-          a past life Brian was a part of super startups, super eting
-          firms, and super consulting firms. Much of his super
-          architecture background includes building super scalable
-          applications, application integration, and award winning web
-          applications. All of them were super. Further, he is a
-          co-founder of the non-profit organization CodeMash
-          (www.codemash.org). He speaks at various regional and
-          national technology events including TechEd. He only wishes
-          his job didn't require him to say "super" so much. Brian
-          holds a Bachelor of Arts degree in Computer Science and
-          Physics from Capital University, Columbus, Ohio. He is also
-          a zealous gamer. For example, he is a huge fan of Fallout 3.
-        </p>
-        <h6>"Five Things to Be More Agile"</h6>
-        <p>
-          Becoming more agile is a journey, not a destination. The
-          first few steps on that journey can be challenging. You have
-          to start changing your culture, but where? We will look at
-          two simple things you can start doing the next day to start
-          to turn the battleship.
-        </p>
-      </div>
-
-      <div class="avatar">
-        <img src="images/headshot/headshot_brian_prince_75x75.jpg" alt="image" />
-      </div>
-      <div class="clear"></div>
-    </div>
-    
-    <div id="speaker-ChrisNelson" class="speaker">    
-     <h5>Chris Nelson</h5>
-      <div class="bios">
-        <p>
-          Chris Nelson is developer and co-founder of Gaslight
-          Software.  He has been doing software development for 15
-          years at companies ranging in size from Fortune 500 to
-          startup using J2EE and more recently, ruby.  He has
-          published several articles and spoken at numerous software
-          development conferences including eRubycon, JavaOne, OSCON,
-          Railsconf and Rubyconf, as well as local Java and Ruby user
-          groups. He lives in Cincinnati, Ohio, with his wife, 4
-          children, and 2 cats.
-        </p>
-        <h6>"Why Agile Fails"</h6>    
-        <p>
-          So you are ready to try something new, ready to take on what
-          appears to be an improvement in the processes you use
-          today. How many projects fail to change their organizations
-          the first time? What can you do to prepare for the change
-          and what signs should you be looking for along the
-          way. Let's explore failure before it happens.
-        </p>
-      </div>
-      
-      <div class="avatar">
-        <img src="images/headshot/headshot_chrisnelson_75x75.jpg" alt="image" />
-     </div>
-      <div class="clear"></div>
-    </div>                            
-    
-    <div id="speaker-SeanHeuer" class="speaker">    
-     <h5>Sean Heuer</h5>
-      <div class="bios">
-        <p>
-        Sean Heuer (CSM, CSP) began his technical career as a Java developer, but after discovering Scrum, he became a Certified ScrumMaster and has never looked back.  Now, Sean is an Agile Coach/Evangelist on multiple projects for the Kroger Co., at its technical center in Blue Ash, Ohio.  Sean leads the Agile Community within Kroger Co.  Currently, he is involved in an agile rollout across his organization.  Sean has coached several project teams through their transition to Scrum and constantly challenges all stakeholders to continuously improve through Agile.  
-        </p>
-        <h6>"A Business Success Story"</h6>    
-        <p>
-        How do you bring a project back from disaster?  Go Agile!  If your failing project suffers from constant requirements changes, high defect rates, and never-ending regression cycles, agile is your savior (if done correctly).   This talk will outline a real life example, from a Fortune 25 company, of how transitioning to agile turned a failing project into a celebration at the weekly board of directors meeting.
-        </p>
-      </div>
-      
-      <div class="avatar">
-        <img src="images/headshot/headshot_sean_heuer.jpg" alt="image" />
-     </div>
-      <div class="clear"></div>
-    </div>                            
-
-    <div id="speaker-JoeOBrien" class="speaker">    
-     <h5>Joe O'Brien</h5>
-      <div class="bios">
-        <p>
-	Joe is a father, speaker, author and developer. Before helping found EdgeCase, LLC, Joe was a developer with ThoughtWorks and spent much of his time working with large J2EE and .NET systems for Fortune 500 companies. He has spent his career as a developer, project manager, and everything in between. Joe is a passionate member of the open source community. He co-founded the Columbus Ruby Brigade and helped organize the Chicago Area Ruby Users Group. His passions are Agile Development in the Enterprise, Ruby, and demonstrating to the Fortune 500 the elegance and power of this incredible language.
-        </p>
-        <h6>"Retrospectives"</h6>    
-        <p>
-        </p>
-      </div>
-      
-      <div class="avatar">
-        <img src="images/headshot/headshot_joeobrien.jpg" alt="image" />
-     </div>
-      <div class="clear"></div>
-    </div>                            
-    
-    <div id="speaker-PhilJapikse" class="speaker">
-      <h5>Phil Japikse</h5>
-      <div class="bios">
-        <p>
-          Phil Japikse has been working with .Net since the first
-          betas, and developing software for over 20 years. Phil is a
-          Microsoft MVP and also holds MCSD, MCDBA, CSM, and CSP
-          certifications.  Phil's experience includes Smart
-          Client/WPF, ASP.NET/MVC, and eCommerce as well as mentoring
-          teams in .Net, SQL Server, and Agile. Phil is a contributing
-          author to www.nPlus1.org, founder and president of Agile
-          Conferences, Inc, teaches custom classes, speaks at national
-          and regional events, and is a passionate member of the
-          developer community (serving as Lead Director for the
-          Cincinnati .Net User's Group).  Phil works as a Principal
-          Consultant with Pinnacle Solutions Group,
-          Inc. (www.pinnsg.com), is a Firefighter/Paramedic, and a
-          volunteer for the Ski Patrol. You can follow Phil on twitter
-          via www.twitter.com/skimedic and read his blog at
-          www.skimedic.com/blog.
-        </p>
-        <h6>"Enterprise Agility"</h6>
-        <p>
-          Scrum and XP have found a strong following in the
-          development community.  But most non-development groups
-          (such as Web Administrators, Production Support, Security,
-          Testing, and Users/Stake Holders) inside the enterprise are
-          far from agile, nor are they trying to move to be more
-          agile. This session uses real experiences from large
-          enterprise development projects to show how to effectively
-          work with those teams.  Instead of trying to "convert" them,
-          we discuss strategies to adapt to their needs while
-          remaining agile in the development realm.
-        </p>
-      </div>
-      <div class="avatar">
-        <img src="images/headshot/headshot_philjapikse_75x75.jpg" alt="image" />
-      </div>
-      <div class="clear"></div>
-    </div>
-    %>
+    <%= render :partial => "schedule" %>
 
   </div>
 </div>
